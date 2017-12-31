@@ -6,6 +6,7 @@ public class playerController : MonoBehaviour {
 
 	// create a rigidBody to which we will apply the forces
 	private Rigidbody rb;
+	public float speed;
 
 	void Start() {
 		// get the rigidbody of the component to which the script is attached
@@ -21,7 +22,7 @@ public class playerController : MonoBehaviour {
 		Vector3 movement = new Vector3 (moveHorizontal,0.0f, moveVertical);
 
 		// apply the forces to the RigidBody
-		rb.AddForce (movement);
+		rb.AddForce (movement * speed);
 	}
 
 }
