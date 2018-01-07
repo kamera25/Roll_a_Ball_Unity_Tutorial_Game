@@ -11,6 +11,7 @@ public class playerController : MonoBehaviour {
 	public float speed;
 	// object of type text, it's a reference to the text UI element
 	public Text countText;
+	public Text winningText;
 
 	void Start() {
 		count = 0;
@@ -33,9 +34,13 @@ public class playerController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.CompareTag("Pick Up")) {
+			// if I don't deactivate the object, it remains in the scene
 			other.gameObject.SetActive (false);
 			count = count + 1;
 			updateText ();
+			if (count == 12) {
+				winningText.gameObject.SetActive(true);
+			}
 		}
 	}
 		
