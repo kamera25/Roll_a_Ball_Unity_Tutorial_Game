@@ -38,7 +38,7 @@ public class playerController : MonoBehaviour {
 			other.gameObject.SetActive (false);
 			count = count + 1;
 			updateText ();
-			if (count == 12) {
+			if (count == 5) {
 				winningText.gameObject.SetActive(true);
 			}
 		}
