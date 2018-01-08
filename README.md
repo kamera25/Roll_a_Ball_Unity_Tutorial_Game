@@ -18,4 +18,4 @@ Tutorial link: https://unity3d.com/learn/tutorials/s/roll-ball-tutorial.
 
 Unity, C#
 
-Copyright (c) 2015 **_Luca Quatela_**
+Copyright (c) 2018 **_Luca Quatela_**
